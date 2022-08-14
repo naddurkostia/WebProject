@@ -1,0 +1,12 @@
+.gulp
+.idea
+.vscode
+node_modules
+dist
+npm-debug.log*
+Thumbs.db
+Desktop.ini
+.DS_Store*
+ehthumbs.db
+package-lock.json
+Icon?
