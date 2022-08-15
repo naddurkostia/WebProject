@@ -6,6 +6,8 @@ const uglify = require('gulp-uglify')
 const cleanCSS = require('gulp-clean-css')
 const concat = require('gulp-concat')
 const autoprefixer = require('gulp-autoprefixer')
+const clean = require('gulp-clean')
+const imagemin = require('gulp-imagemin')
 
 const serv = () => {
 	browserSync.init({
@@ -16,9 +18,14 @@ const serv = () => {
 	})
 }
 
+const cleaner = cb => {
+	src('./dist/**').pipe(clean())
+	cb()
+}
+
 const scripts = done => {
 	src('./src/js/*.js')
-		.pipe(concat('index.js'))
+		.pipe(concat('scripts.min.js'))
 		.pipe(uglify())
 		.pipe(minifyjs())
 		.pipe(dest('./dist/js'))
@@ -31,13 +38,17 @@ const styles = done => {
 		.pipe(sass().on('error', sass.logError))
 		.pipe(autoprefixer())
 		.pipe(cleanCSS())
+		.pipe(concat('styles.min.css'))
 		.pipe(dest('./dist/css'))
 		.pipe(browserSync.stream())
 	done()
 }
 
-const images = () => {
-	src('./src/img/**/*.{jpg,jpeg,png,svg}').pipe(dest('./dist/img'))
+const images = cb => {
+	src('./src/img/**/*.{jpg,jpeg,png,svg}')
+		.pipe(imagemin())
+		.pipe(dest('./dist/img'))
+	cb()
 }
 
 const watcher = () => {
@@ -50,4 +61,6 @@ const watcher = () => {
 	)
 }
 
-exports.default = parallel(serv, watcher, series(styles, scripts, images))
+// exports.default = parallel(serv, watcher, series(styles, scripts, images))
+exports.build = parallel(cleaner, series(styles, scripts, images))
+exports.dev = parallel(serv, watcher)
