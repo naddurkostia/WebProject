@@ -4,7 +4,8 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"start": "gulp build && gulp dev"
+		"build": "gulp build",
+		"dev": "gulp dev"
 	},
 	"repository": {
 		"type": "git",

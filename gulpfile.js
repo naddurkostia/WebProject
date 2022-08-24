@@ -19,7 +19,7 @@ const serv = () => {
 }
 
 const cleaner = cb => {
-	src('./dist/**').pipe(clean())
+	src('./dist/**/**').pipe(clean())
 	cb()
 }
 
@@ -33,11 +33,29 @@ const scripts = done => {
 	done()
 }
 
+const devScripts = done => {
+	src('./src/js/*.js')
+		.pipe(concat('scripts.min.js'))
+		.pipe(minifyjs())
+		.pipe(dest('./dist/js'))
+		.pipe(browserSync.stream())
+	done()
+}
+
 const styles = done => {
 	src('./src/scss/**/*.scss')
 		.pipe(sass().on('error', sass.logError))
 		.pipe(autoprefixer())
 		.pipe(cleanCSS())
+		.pipe(concat('styles.min.css'))
+		.pipe(dest('./dist/css'))
+		.pipe(browserSync.stream())
+	done()
+}
+
+const devStyles = done => {
+	src('./src/scss/**/*.scss')
+		.pipe(sass().on('error', sass.logError))
 		.pipe(concat('styles.min.css'))
 		.pipe(dest('./dist/css'))
 		.pipe(browserSync.stream())
@@ -63,4 +81,4 @@ const watcher = () => {
 
 // exports.default = parallel(serv, watcher, series(styles, scripts, images))
 exports.build = parallel(cleaner, series(styles, scripts, images))
-exports.dev = parallel(serv, watcher)
+exports.dev = parallel(serv, watcher, series(devStyles, devScripts))
