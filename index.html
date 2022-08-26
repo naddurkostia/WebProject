@@ -1,200 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
-		<link rel="stylesheet" href="./dist/css/styles.min.css" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@400;700&display=swap"
-			rel="stylesheet"
-		/>
-	</head>
-	<body>
-		<section class="overview">
-			<div class="container overview-container">
-				<div class="editor-info">
-					<h2 class="editor-info__title">Revolutionary editor</h2>
-					<p class="editor-info__description">
-						Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui
-						laoreet vulputate dignissim.<br />
-						Sed id metus id quam auctor molestie eget ut augue.
-					</p>
-					<div class="editor-info__buttons">
-						<div class="editor-info__item editor-info__item--watch">
-							<svg
-								aria-hidden="true"
-								height="16"
-								viewBox="0 0 16 16"
-								version="1.1"
-								width="16"
-								data-view-component="true"
-								class="octicon octicon-eye"
-							>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Document</title>
+	<link rel="stylesheet" href="./dist/css/styles.min.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@400;700&display=swap"
+		rel="stylesheet" />
+</head>
+
+<body>
+	<section class="overview ">
+		<div class="container overview-container">
+			<div class="editor-info">
+				<h2 class="editor-info__title">Revolutionary editor</h2>
+				<p class="editor-info__description">
+					Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui
+					laoreet vulputate dignissim.<br />
+					Sed id metus id quam auctor molestie eget ut augue.
+				</p>
+				<div class="editor-info__buttons">
+					<div class="editor-info__item editor-info__item--watch">
+						<svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true"
+							class="octicon octicon-eye">
+							<path fill-rule="evenodd"
+								d="M1.679 7.932c.412-.621 1.242-1.75 2.366-2.717C5.175 4.242 6.527 3.5 8 3.5c1.473 0 2.824.742 3.955 1.715 1.124.967 1.954 2.096 2.366 2.717a.119.119 0 010 .136c-.412.621-1.242 1.75-2.366 2.717C10.825 11.758 9.473 12.5 8 12.5c-1.473 0-2.824-.742-3.955-1.715C2.92 9.818 2.09 8.69 1.679 8.068a.119.119 0 010-.136zM8 2c-1.981 0-3.67.992-4.933 2.078C1.797 5.169.88 6.423.43 7.1a1.619 1.619 0 000 1.798c.45.678 1.367 1.932 2.637 3.024C4.329 13.008 6.019 14 8 14c1.981 0 3.67-.992 4.933-2.078 1.27-1.091 2.187-2.345 2.637-3.023a1.619 1.619 0 000-1.798c-.45-.678-1.367-1.932-2.637-3.023C11.671 2.992 9.981 2 8 2zm0 8a2 2 0 100-4 2 2 0 000 4z">
+							</path>
+						</svg>
+						<p class="editor-info__text">watch</p>
+						<p class="editor-info__number">3</p>
+					</div>
+					<div class="editor-info__item editor-info__item--fork">
+						<svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true"
+							class="octicon octicon-repo-forked mr-2">
+							<path fill-rule="evenodd"
+								d="M5 3.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm0 2.122a2.25 2.25 0 10-1.5 0v.878A2.25 2.25 0 005.75 8.5h1.5v2.128a2.251 2.251 0 101.5 0V8.5h1.5a2.25 2.25 0 002.25-2.25v-.878a2.25 2.25 0 10-1.5 0v.878a.75.75 0 01-.75.75h-4.5A.75.75 0 015 6.25v-.878zm3.75 7.378a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm3-8.75a.75.75 0 100-1.5.75.75 0 000 1.5z">
+							</path>
+						</svg>
+						<p class="editor-info__text">fork</p>
+						<p class="editor-info__number">20</p>
+					</div>
+					<details class="editor-info__triangle">
+						<summary class="editor-info__content">
+							<svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+								data-view-component="true" class="octicon octicon-triangle-down">
 								<path
-									fill-rule="evenodd"
-									d="M1.679 7.932c.412-.621 1.242-1.75 2.366-2.717C5.175 4.242 6.527 3.5 8 3.5c1.473 0 2.824.742 3.955 1.715 1.124.967 1.954 2.096 2.366 2.717a.119.119 0 010 .136c-.412.621-1.242 1.75-2.366 2.717C10.825 11.758 9.473 12.5 8 12.5c-1.473 0-2.824-.742-3.955-1.715C2.92 9.818 2.09 8.69 1.679 8.068a.119.119 0 010-.136zM8 2c-1.981 0-3.67.992-4.933 2.078C1.797 5.169.88 6.423.43 7.1a1.619 1.619 0 000 1.798c.45.678 1.367 1.932 2.637 3.024C4.329 13.008 6.019 14 8 14c1.981 0 3.67-.992 4.933-2.078 1.27-1.091 2.187-2.345 2.637-3.023a1.619 1.619 0 000-1.798c-.45-.678-1.367-1.932-2.637-3.023C11.671 2.992 9.981 2 8 2zm0 8a2 2 0 100-4 2 2 0 000 4z"
-								></path>
+									d="M4.427 7.427l3.396 3.396a.25.25 0 00.354 0l3.396-3.396A.25.25 0 0011.396 7H4.604a.25.25 0 00-.177.427z">
+								</path>
 							</svg>
-							<p class="editor-info__text">watch</p>
-							<p class="editor-info__number">3</p>
-						</div>
-						<div class="editor-info__item editor-info__item--fork">
-							<svg
-								aria-hidden="true"
-								height="16"
-								viewBox="0 0 16 16"
-								version="1.1"
-								width="16"
-								data-view-component="true"
-								class="octicon octicon-repo-forked mr-2"
-							>
+						</summary>
+					</details>
+					<div class="editor-info__item editor-info__item---star">
+						<svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true"
+							class="octicon octicon-star d-inline-block mr-2">
+							<path fill-rule="evenodd"
+								d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z">
+							</path>
+						</svg>
+						<p class="editor-info__text">star</p>
+						<p class="editor-info__number">15</p>
+					</div>
+					<details class="editor-info__triangle">
+						<summary class="editor-info__content">
+							<svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+								data-view-component="true" class="octicon octicon-triangle-down">
 								<path
-									fill-rule="evenodd"
-									d="M5 3.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm0 2.122a2.25 2.25 0 10-1.5 0v.878A2.25 2.25 0 005.75 8.5h1.5v2.128a2.251 2.251 0 101.5 0V8.5h1.5a2.25 2.25 0 002.25-2.25v-.878a2.25 2.25 0 10-1.5 0v.878a.75.75 0 01-.75.75h-4.5A.75.75 0 015 6.25v-.878zm3.75 7.378a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm3-8.75a.75.75 0 100-1.5.75.75 0 000 1.5z"
-								></path>
+									d="M4.427 7.427l3.396 3.396a.25.25 0 00.354 0l3.396-3.396A.25.25 0 0011.396 7H4.604a.25.25 0 00-.177.427z">
+								</path>
 							</svg>
-							<p class="editor-info__text">fork</p>
-							<p class="editor-info__number">20</p>
-						</div>
-						<details class="editor-info__triangle">
-							<summary class="editor-info__content">
-								<svg
-									aria-hidden="true"
-									height="16"
-									viewBox="0 0 16 16"
-									version="1.1"
-									width="16"
-									data-view-component="true"
-									class="octicon octicon-triangle-down"
-								>
-									<path
-										d="M4.427 7.427l3.396 3.396a.25.25 0 00.354 0l3.396-3.396A.25.25 0 0011.396 7H4.604a.25.25 0 00-.177.427z"
-									></path>
-								</svg>
-							</summary>
-						</details>
-						<div class="editor-info__item editor-info__item---star">
-							<svg
-								aria-hidden="true"
-								height="16"
-								viewBox="0 0 16 16"
-								version="1.1"
-								width="16"
-								data-view-component="true"
-								class="octicon octicon-star d-inline-block mr-2"
-							>
-								<path
-									fill-rule="evenodd"
-									d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"
-								></path>
-							</svg>
-							<p class="editor-info__text">star</p>
-							<p class="editor-info__number">15</p>
-						</div>
-						<details class="editor-info__triangle">
-							<summary class="editor-info__content">
-								<svg
-									aria-hidden="true"
-									height="16"
-									viewBox="0 0 16 16"
-									version="1.1"
-									width="16"
-									data-view-component="true"
-									class="octicon octicon-triangle-down"
-								>
-									<path
-										d="M4.427 7.427l3.396 3.396a.25.25 0 00.354 0l3.396-3.396A.25.25 0 0011.396 7H4.604a.25.25 0 00-.177.427z"
-									></path>
-								</svg>
-							</summary>
-						</details>
+						</summary>
+					</details>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="features">
+		<div class="container features-container">
+			<div class="info">
+				<div class="info-item">
+					<img src="./dist/img/features/info-icon1.png" alt="Info Icon 1" class="info-item__image" width="111" />
+					<div class="info-item__text">
+						<h4 class="info-item__title">Creatred to Make The Web Better</h4>
+						<p class="info-item__description">
+							Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui
+							laoreet vulputate dignissim. Sed id metus id quam auctor
+							molestie eget ut augue.
+						</p>
+					</div>
+				</div>
+				<div class="info-item">
+					<img src="./dist/img/features/info-icon2.png" alt="Info Icon 2"
+						class="info-item__image info-item__image--biggerPadding1" width="90" />
+					<div class="info-item__text info-item__text--morePadding1">
+						<h4 class="info-item__title">Incredibly Powerful Tool</h4>
+						<p class="info-item__description">
+							Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus felis
+							odio, ut volutpat massa placerat ac. Curabitur dapibus iaculis
+							mi gravida luctus. Aliquam erat volutpat.
+						</p>
+					</div>
+				</div>
+				<div class="info-item">
+					<img src="./dist/img/features/info-icon3.png" alt="Info Icon 3"
+						class="info-item__image info-item__image--biggerPadding2" width="60" />
+					<div class="info-item__text info-item__text--morePadding2">
+						<h4 class="info-item__title">Experimental Stuff</h4>
+						<p class="info-item__description">
+							Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus felis
+							odio, ut volutpat massa placerat ac. Curabitur dapibus iaculis
+							mi gravida luctus. Aliquam erat volutpat.
+						</p>
+					</div>
+				</div>
+				<div class="info-item">
+					<img src="./dist/img/features/info-icon4.png" alt="Info Icon 4"
+						class="info-item__image info-item__image--biggerPadding3" width="71" />
+					<div class="info-item__text info-item__text--morePadding3">
+						<h4 class="info-item__title">Creatred to Make The Web Better</h4>
+						<p class="info-item__description info-item__description--last">
+							Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus felis
+							odio, ut volutpat massa placerat ac. Curabitur dapibus iaculis
+							mi gravida luctus. Aliquam erat volutpat.
+						</p>
 					</div>
 				</div>
 			</div>
-		</section>
-		<section class="features">
-			<div class="container features-container">
-				<div class="info">
-					<div class="info-item">
-						<img
-							src="./dist/img/features/info-icon1.png"
-							alt="Info Icon 1"
-							class="info-item__image"
-							width="111"
-						/>
-						<div class="info-item__text">
-							<h4 class="info-item__title">Creatred to Make The Web Better</h4>
-							<p class="info-item__description">
-								Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui
-								laoreet vulputate dignissim. Sed id metus id quam auctor
-								molestie eget ut augue.
-							</p>
-						</div>
-					</div>
-					<div class="info-item">
-						<img
-							src="./dist/img/features/info-icon2.png"
-							alt="Info Icon 2"
-							class="info-item__image info-item__image--biggerPadding1"
-							width="90"
-						/>
-						<div class="info-item__text info-item__text--morePadding1">
-							<h4 class="info-item__title">Incredibly Powerful Tool</h4>
-							<p class="info-item__description">
-								Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus felis
-								odio, ut volutpat massa placerat ac. Curabitur dapibus iaculis
-								mi gravida luctus. Aliquam erat volutpat.
-							</p>
-						</div>
-					</div>
-					<div class="info-item">
-						<img
-							src="./dist/img/features/info-icon3.png"
-							alt="Info Icon 3"
-							class="info-item__image info-item__image--biggerPadding2"
-							width="60"
-						/>
-						<div class="info-item__text info-item__text--morePadding2">
-							<h4 class="info-item__title">Experimental Stuff</h4>
-							<p class="info-item__description">
-								Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus felis
-								odio, ut volutpat massa placerat ac. Curabitur dapibus iaculis
-								mi gravida luctus. Aliquam erat volutpat.
-							</p>
-						</div>
-					</div>
-					<div class="info-item">
-						<img
-							src="./dist/img/features/info-icon4.png"
-							alt="Info Icon 4"
-							class="info-item__image info-item__image--biggerPadding3"
-							width="71"
-						/>
-						<div class="info-item__text info-item__text--morePadding3">
-							<h4 class="info-item__title">Creatred to Make The Web Better</h4>
-							<p class="info-item__description">
-								Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus felis
-								odio, ut volutpat massa placerat ac. Curabitur dapibus iaculis
-								mi gravida luctus. Aliquam erat volutpat.
-							</p>
-						</div>
-					</div>
+			<div class="preview">
+				<h2 class="preview__title">&lt;Here is what you get&gt;</h2>
+				<img src="./dist/img/features/editor.png" alt="Editor" class="preview__image" width="700" />
+			</div>
+		</div>
+	</section>
+	<section class="price">
+		<div class="container price-container">
+			<h2 class="price__title">Fork Subscription Pricing</h2>
+			<div class="price-items">
+				<div class="price-item">
+					<h3 class="price-item__title">Students</h3>
+					<h3 class="price-item__cost">
+						<span class="price-item__symbol">$</span>29</h3>
+					<h4 class="price-item__month">per month</h4>
+					<hr class="price-item__line">
+					<p class="price-item__info">Personal License</p>
+					<button class="btn price-item__btn price-item__btn--biggerMargin1">purchase</button>
 				</div>
-				<div class="preview">
-					<h2 class="preview__title">&lt;Here is what you get&gt;</h2>
-					<img
-						src="./dist/img/features/editor.png"
-						alt="Editor"
-						class="preview__image"
-						width="700"
-					/>
+				<div class="price-item">
+					<h3 class="price-item__title">professional</h3>
+					<h3 class="price-item__cost">
+						<span class="price-item__symbol">$</span>59</h3>
+					<h4 class="price-item__month">per month</h4>
+					<hr class="price-item__line">
+					<p class="price-item__info">Professional License<br>Email Support</p>
+					<button class="btn price-item__btn">purchase</button>
+				</div>
+				<div class="price-item price-item--bigger">
+					<h3 class="price-item__title price-item__title--bigger">agency</h3>
+					<h3 class="price-item__cost price-item__cost--bigger">
+						<span class="price-item__symbol price-item__symbol--bigger">$</span>99</h3>
+					<h4 class="price-item__month price-item__month--bigger">per month</h4>
+					<hr class="price-item__line price-item__line--bigger">
+					<p class="price-item__info price-item__info--bigger">1-12 Team Members<br>Phone Support</p>
+					<button class="btn price-item__btn price-item__btn--bigger price-item__btn--biggerMargin2">purchase</button>
+				</div>
+				<div class="price-item">
+					<h3 class="price-item__title">enterprise</h3>
+					<h3 class="price-item__cost">
+						<span class="price-item__symbol">$</span>159</h3>
+					<h4 class="price-item__month">per month</h4>
+					<hr class="price-item__line">
+					<p class="price-item__info">Unlimited Team Members<br>24/ 7 Phone Support</p>
+					<button class="btn price-item__btn price-item__btn--biggerMargin3">purchase</button>
 				</div>
 			</div>
-		</section>
-		<script src="./dist/js/scripts.min.js"></script>
-	</body>
+		</div>
+	</section>
+	<script src="./dist/js/scripts.min.js"></script>
+</body>
+
 </html>
