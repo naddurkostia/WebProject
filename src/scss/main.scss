@@ -7,4 +7,10 @@
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
+	@media (max-width: 769px) {
+		max-width: 768px;
+	}
+	@media (max-width: 321px) {
+		max-width: 320px;
+	}
 }

@@ -22,6 +22,10 @@
 	align-items: center;
 	column-gap: 15px;
 	padding-top: 51px;
+	@media (max-width: 1000px) {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
 }
 
 .price-item {
@@ -39,6 +43,17 @@
 		background-color: rgb(70, 48, 72, 0.84);
 		min-height: 560px;
 		max-width: 299px;
+		@media (max-width: 1000px) {
+			margin-top: 0px;
+		}
+	}
+	&--last {
+		@media (max-width: 1000px) {
+			margin-right: 42px;
+		}
+		@media (max-width: 567px) {
+			margin-right: 0px;
+		}
 	}
 }
 

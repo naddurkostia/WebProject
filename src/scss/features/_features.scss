@@ -2,19 +2,62 @@
 	margin-top: 70px;
 	padding-top: 100px;
 	background-color: #f4f4f4;
+	@media (max-width: 1000px) {
+		background-color: #ffffff;
+	}
+	@media (max-width: 321px) {
+		padding-top: 120px;
+	}
 }
 
 .features-container {
-	// max-width: 1300px !important;
 	display: flex;
-	// align-items: center;
+	@media (max-width: 1000px) {
+		flex-direction: column;
+		// align-items: center;
+		text-align: center;
+	}
+}
+
+.features__title {
+	display: none;
+	@media (max-width: 1000px) {
+		display: block !important;
+		margin-bottom: 52px !important;
+		padding-bottom: 0 !important;
+	}
+	@media (max-width: 321px) {
+		font-size: 32px !important;
+		line-height: 38px !important;
+	}
+}
+
+.info {
+	@media (max-width: 1000px) {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	@media (max-width: 321px) {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 }
 
 .info-item {
 	display: flex;
-	flex-direction: row;
 	// padding-left: 90px;
 	margin-right: 20px;
+	@media (max-width: 1000px) {
+		margin-right: 0;
+		text-align: left;
+	}
+	@media (max-width: 321px) {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
 }
 
 .info-item__image {
@@ -27,6 +70,18 @@
 	}
 	&--biggerPadding3 {
 		padding-left: 11px;
+	}
+	@media (max-width: 321px) {
+		padding-bottom: 24px;
+		&--biggerPadding1 {
+			padding-left: 0px !important;
+		}
+		&--biggerPadding2 {
+			padding-left: 0px !important;
+		}
+		&--biggerPadding3 {
+			padding-left: 0px !important;
+		}
 	}
 }
 
@@ -43,8 +98,21 @@
 	&--morePadding3 {
 		padding-left: 53px;
 	}
+	@media (max-width: 1000px) {
+		max-width: 582px;
+	}
+	@media (max-width: 321px) {
+		&--morePadding1 {
+			padding-left: 0px;
+		}
+		&--morePadding2 {
+			padding-left: 0px;
+		}
+		&--morePadding3 {
+			padding-left: 0px;
+		}
+	}
 }
-
 .info-item__title {
 	padding-left: 1px;
 	font-family: 'Montserrat';
@@ -54,6 +122,9 @@
 	color: $greyColor;
 	margin: 0;
 	padding-bottom: 16px;
+	@media (max-width: 321px) {
+		line-height: 16px;
+	}
 }
 
 .info-item__description {
@@ -65,7 +136,6 @@
 	margin: 0;
 	color: $featuresDescColor;
 	padding-bottom: 34px;
-
 	&--last {
 		padding-bottom: 71px;
 	}
@@ -74,6 +144,9 @@
 .preview {
 	display: flex;
 	flex-direction: column;
+	@media (max-width: 1000px) {
+		align-items: flex-end;
+	}
 }
 
 .preview__title {
@@ -84,4 +157,14 @@
 	line-height: 50px;
 	margin: 0;
 	padding-bottom: 19px;
+	@media (max-width: 1000px) {
+		display: none;
+	}
+}
+
+.preview__image {
+	@media (max-width: 320px) {
+		max-width: 317px;
+		max-height: 381px;
+	}
 }
