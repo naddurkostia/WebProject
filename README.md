@@ -4,4 +4,4 @@ Plugins: browser-sync, gulp, gulp-autoprefixer, gulp-clean, gulp-clean-css, gulp
 
 ----
 
-Authors: Kostiantyn Naddur, Andreн Tantsyura
+Authors: Kostiantyn Naddur, Andrey Tantsyura
