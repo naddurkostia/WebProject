@@ -1,0 +1,109 @@
+.testomoials-section {
+  background-image: url("./src/img/testmonials/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #4a3b4e;
+  padding-bottom: 29px;
+
+  .section-title {
+    padding-top: 109px;
+    padding-bottom: 82px;
+  }
+
+  .testomonials-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 116px;
+    padding-bottom: 118px;
+
+    .testimonial {
+      width: 350px;
+
+      a .testimonial-logo {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .testimonial-text {
+        font-family: "Lato";
+        font-style: italic;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        color: #ffffff;
+        margin-top: 33px;
+      }
+    }
+  }
+
+  .testomonials-info {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: #a291a5;
+
+    &::after {
+      content: "";
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+      width: 780px;
+      height: 2px;
+      background: #645766;
+      margin-top: 18px;
+    }
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 992px) {
+  .testomoials-section .section-title {
+    font-size: 42px;
+    line-height: 44px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .testomoials-section .section-title {
+    font-size: 36px;
+    line-height: 48px;
+  }
+}
+
+@media screen and (max-width: 1095px) and (min-width: 993px) {
+  .testomoials-section .testomonials-list {
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 755px) and (min-width: 481px) {
+  .testomoials-section .testomonials-list {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .testomoials-section .testomonials-list {
+    row-gap: 45px;
+    padding-bottom: 37px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 992px) {
+  .testomoials-section .testomonials-info::after {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .testomoials-section .testomonials-info::after {
+    width: 100%;
+  }
+}
