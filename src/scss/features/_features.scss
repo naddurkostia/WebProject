@@ -2,17 +2,17 @@
 	margin-top: 70px;
 	padding-top: 100px;
 	background-color: #f4f4f4;
-	@media (max-width: 1000px) {
+	@media (max-width: 993px) {
 		background-color: #ffffff;
 	}
-	@media (max-width: 321px) {
+	@media (max-width: 480px) {
 		padding-top: 120px;
 	}
 }
 
 .features-container {
 	display: flex;
-	@media (max-width: 1000px) {
+	@media (max-width: 993px) {
 		flex-direction: column;
 		// align-items: center;
 		text-align: center;
@@ -21,24 +21,24 @@
 
 .features__title {
 	display: none;
-	@media (max-width: 1000px) {
+	@media (max-width: 993px) {
 		display: block !important;
 		margin-bottom: 52px !important;
 		padding-bottom: 0 !important;
 	}
-	@media (max-width: 321px) {
+	@media (max-width: 480px) {
 		font-size: 32px !important;
 		line-height: 38px !important;
 	}
 }
 
 .info {
-	@media (max-width: 1000px) {
+	@media (max-width: 993px) {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 	}
-	@media (max-width: 321px) {
+	@media (max-width: 480px) {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -49,11 +49,11 @@
 	display: flex;
 	// padding-left: 90px;
 	margin-right: 20px;
-	@media (max-width: 1000px) {
+	@media (max-width: 993px) {
 		margin-right: 0;
 		text-align: left;
 	}
-	@media (max-width: 321px) {
+	@media (max-width: 480px) {
 		flex-direction: column;
 		align-items: center;
 		text-align: center;
@@ -71,7 +71,7 @@
 	&--biggerPadding3 {
 		padding-left: 11px;
 	}
-	@media (max-width: 321px) {
+	@media (max-width: 480px) {
 		padding-bottom: 24px;
 		&--biggerPadding1 {
 			padding-left: 0px !important;
@@ -98,10 +98,10 @@
 	&--morePadding3 {
 		padding-left: 53px;
 	}
-	@media (max-width: 1000px) {
+	@media (max-width: 993px) {
 		max-width: 582px;
 	}
-	@media (max-width: 321px) {
+	@media (max-width: 480px) {
 		&--morePadding1 {
 			padding-left: 0px;
 		}
@@ -122,7 +122,7 @@
 	color: $greyColor;
 	margin: 0;
 	padding-bottom: 16px;
-	@media (max-width: 321px) {
+	@media (max-width: 480px) {
 		line-height: 16px;
 	}
 }
@@ -144,7 +144,7 @@
 .preview {
 	display: flex;
 	flex-direction: column;
-	@media (max-width: 1000px) {
+	@media (max-width: 993px) {
 		align-items: flex-end;
 	}
 }
@@ -157,13 +157,13 @@
 	line-height: 50px;
 	margin: 0;
 	padding-bottom: 19px;
-	@media (max-width: 1000px) {
+	@media (max-width: 993px) {
 		display: none;
 	}
 }
 
 .preview__image {
-	@media (max-width: 320px) {
+	@media (max-width: 480px) {
 		max-width: 317px;
 		max-height: 381px;
 	}
