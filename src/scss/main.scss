@@ -3,10 +3,14 @@
 @import 'overview/overview';
 @import 'features/features';
 @import 'price/price';
+@import 'header/header';
+@import 'header/header-bg';
+@import 'testimonials/testimonials';
 
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
+
 	@media (max-width: 993px) {
 		max-width: 768px;
 	}

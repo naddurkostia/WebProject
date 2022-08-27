@@ -2,6 +2,7 @@
 	margin-top: 70px;
 	padding-top: 100px;
 	background-color: #f4f4f4;
+
 	@media (max-width: 993px) {
 		background-color: #ffffff;
 	}
@@ -11,7 +12,9 @@
 }
 
 .features-container {
+	// max-width: 1300px !important;
 	display: flex;
+
 	@media (max-width: 993px) {
 		flex-direction: column;
 		// align-items: center;
@@ -43,12 +46,16 @@
 		flex-direction: column;
 		align-items: center;
 	}
+
+	// align-items: center;
 }
 
 .info-item {
 	display: flex;
+	flex-direction: row;
 	// padding-left: 90px;
 	margin-right: 20px;
+
 	@media (max-width: 993px) {
 		margin-right: 0;
 		text-align: left;
@@ -71,6 +78,7 @@
 	&--biggerPadding3 {
 		padding-left: 11px;
 	}
+
 	@media (max-width: 480px) {
 		padding-bottom: 24px;
 		&--biggerPadding1 {
@@ -113,6 +121,7 @@
 		}
 	}
 }
+
 .info-item__title {
 	padding-left: 1px;
 	font-family: 'Montserrat';
@@ -122,6 +131,7 @@
 	color: $greyColor;
 	margin: 0;
 	padding-bottom: 16px;
+
 	@media (max-width: 480px) {
 		line-height: 16px;
 	}
@@ -136,6 +146,7 @@
 	margin: 0;
 	color: $featuresDescColor;
 	padding-bottom: 34px;
+
 	&--last {
 		padding-bottom: 71px;
 	}
@@ -144,6 +155,7 @@
 .preview {
 	display: flex;
 	flex-direction: column;
+
 	@media (max-width: 993px) {
 		align-items: flex-end;
 	}
@@ -157,6 +169,7 @@
 	line-height: 50px;
 	margin: 0;
 	padding-bottom: 19px;
+
 	@media (max-width: 993px) {
 		display: none;
 	}

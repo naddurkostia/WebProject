@@ -22,6 +22,7 @@
 	align-items: center;
 	column-gap: 15px;
 	padding-top: 51px;
+
 	@media (max-width: 993px) {
 		flex-wrap: wrap;
 		justify-content: center;
@@ -43,6 +44,7 @@
 		background-color: rgb(70, 48, 72, 0.84);
 		min-height: 560px;
 		max-width: 299px;
+
 		@media (max-width: 993px) {
 			margin-top: 0px;
 		}
